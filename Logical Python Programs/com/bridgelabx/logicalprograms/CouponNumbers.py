@@ -7,7 +7,6 @@
 """""
 import random
 
-
 class CouponNumbers:
 
     def inputNoOfCoupon(self):  #method to take input from user for no of coupons

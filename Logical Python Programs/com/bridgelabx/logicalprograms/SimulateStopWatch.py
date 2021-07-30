@@ -7,7 +7,6 @@
 """""
 from time import time
 
-
 class SimulateStopWatch:
     startTime = 0
     stopTime = 0
@@ -21,12 +20,12 @@ class SimulateStopWatch:
 
     def elapsedTime(self):
         self.elapsTime = self.stopTime - self.startTime   # calculate elapsed time and display
-        print(int(self.elapsTime) / 1000)                 # print elapsed time in second
+        print(int(self.elapsTime) / 1000, "sec")          # print elapsed time in second
 
 if __name__ == '__main__':                                # main method
     sWatch = SimulateStopWatch()                          # creating object of the class
     while True:
-        try:                                              # exception handeling
+        try:                                              # exception handling
             startInput = int(input("Enter 1 for start: "))
             if startInput != 1:
                 print("Wrong input !! Enter 1 only")
